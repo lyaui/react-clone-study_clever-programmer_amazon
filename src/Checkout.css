@@ -1,9 +1,9 @@
-/* .checkout {
+.checkout {
   display: flex;
   padding: 20px;
   background-color: #fff;
   height: max-Content;
-} */
+}
 
 .checkout__title {
   margin-right: 10px;

@@ -2,6 +2,12 @@ export const initialState = {
   basket: [],
 };
 
+export const getBasketTotal = (basket) =>
+  basket?.reduce((acc, cur) => {
+    console.log(acc, cur);
+    return acc + cur.price;
+  }, 0);
+
 const reducer = (state, action) => {
   switch (action.type) {
     case 'ADD_TO_BASKET':
